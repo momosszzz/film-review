@@ -1,0 +1,59 @@
+.form-field {
+    margin-bottom: 1.5rem;
+    border-radius: 3px;
+    background-color: #fafafa;
+    box-shadow: inset 0 0 8px #eee;
+    padding: .75rem;
+}
+
+@media screen and (min-width: 42em) {
+    .form-field {
+        padding: 1.125rem;
+    }
+}
+
+select {
+    background-color: #fff;
+    border-color: #e0e0e0;
+    height: 34px;
+    margin: 0;
+}
+
+:root {
+    --gl-star-size: 24px;
+}
+
+@media screen and (min-width: 35em) {
+    .gl-star-rating .gl-star-rating--stars > span {
+        --gl-star-size: 30px;
+    }
+}
+
+@media screen and (min-width: 42em) {
+    .gl-star-rating .gl-star-rating--stars > span {
+        --gl-star-size: 36px;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .gl-star-rating .gl-star-rating--stars > span {
+        --gl-star-size: 42px;
+    }
+}
+
+.gl-star-rating .gl-emote-bg {
+    transition: fill .15s ease-in-out;
+}
+
+.gl-star-rating [data-value]:not(.gl-active) .gl-emote-bg {
+    fill: #dcdce6;
+}
+
+.gl-star-rating .gl-emote {
+    transform: scale(.9);
+    transition: transform .25s ease-in-out;
+}
+
+.gl-star-rating .gl-selected .gl-emote {
+    transform: scale(1.1);
+}
